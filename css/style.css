@@ -1,4 +1,5 @@
-*{
+/*Normalmente esta regla la aplicamos a todos los elementos pero en este proyecto solo lo aplicaremos al body*/
+body{                            
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -6,6 +7,14 @@
 
 html{
     font-size: 62.5%;
+}
+
+/*al estar haciendo el nav, vemos la linea abajo de los elementos y la queremos quitar pero como seguramente lo tendremos que 
+hacer para mas elementos ancla en el proyecto hacemos una regla global para todos los elementos a en la pagina aca abajo*/
+
+a{
+    text-decoration: none;  /*quita la decoracion del texto, en este caso la linea q subraya los mismos*/
+    cursor: pointer; /*queremos que aparezca una manita cuando hagamos hover sobre los elementos ancla*/
 }
 
 header{
@@ -16,4 +25,19 @@ header{
 header nav{
     display: flex;   /*utilizaremos flex para mover nuestro nav dentro de header*/
     justify-content: flex-end;  /*justificaremos nuestro nav al final de la pantalla horizontal*/
+}
+
+header nav .nav-right-section{
+    width: 25rem;
+    height:auto; /*ya le habiamos dado una altura al padre asi que ponemos auto para que la herede*/
+    display: flex; /*para colocar los elementos horizonales de la lista*/
+    list-style:none; /*para quitar los bullets de la lista en cada elemento*/
+    justify-content: center; /*para que centre nuestros elementos ya que por default esta justificados a uno de los lados*/
+    align-items: center;
+}
+
+/*como nuestros elementos estaban pegados entre si, aplicamos estilo solo a nuestras anclas*/
+nav .nav-right-section a{
+    margin-right: 1rem; /*le agregara margen a la derecha de los elementos ancla de 10px para que se separen*/
+    color: #000000; /*le agregamos color a los elementos, en este caso negro*/
 }
