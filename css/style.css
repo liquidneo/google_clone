@@ -7,6 +7,7 @@ body{
 
 html{
     font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*al estar haciendo el nav, vemos la linea abajo de los elementos y la queremos quitar pero como seguramente lo tendremos que 
@@ -40,4 +41,20 @@ header nav .nav-right-section{
 nav .nav-right-section a{
     margin-right: 1rem; /*le agregara margen a la derecha de los elementos ancla de 10px para que se separen*/
     color: #000000; /*le agregamos color a los elementos, en este caso negro*/
+}
+
+/*ahora le damos estilo a nuestro icono de menu*/
+nav .nav-right-section .menu-icon {
+    background-image: url("https://static.thenounproject.com/png/756729-200.png"); /*utilizaremos esto para insertar la imagen en la clase que creamos en el html desde css*/
+    background-repeat: no-repeat; /*esto lo utilizamos en caso la imagen al no poder ocupar todo el espacio no se repita*/
+    background-position: center; /*para que nuestro icono quede siempre al centro*/
+    background-size: contain; /*esto hara que el icono se aproxime al size de mi contenedor*/
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+/*Aca le daremos estilo a nuestro logo de perfil*/
+nav .nav-right-section img{
+    border-radius: 50%; /*le damos estilo redondeado del 50% a nuestro contenedor para que se convierta en un circulo*/
+    margin-left: 1rem; /*le daremos un margen a nuestra imagen ya que se pego mucho al icono de menu*/
 }
