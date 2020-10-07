@@ -8,3 +8,12 @@ html{
     font-size: 62.5%;
 }
 
+header{
+    width: 100%; 
+    height: 6rem;
+}
+
+header nav{
+    display: flex;   /*utilizaremos flex para mover nuestro nav dentro de header*/
+    justify-content: flex-end;  /*justificaremos nuestro nav al final de la pantalla horizontal*/
+}
