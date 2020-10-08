@@ -59,3 +59,27 @@ nav .nav-right-section img{
     border-radius: 50%; /*le damos estilo redondeado del 50% a nuestro contenedor para que se convierta en un circulo*/
     margin-left: 1rem; /*le daremos un margen a nuestra imagen ya que se pego mucho al icono de menu*/
 }
+
+/*Empezamos a darle estilo a la seccion principal*/
+
+main{
+    margin-top: 15rem;  /*le agregamos un margen para separarlo de nuestro header*/
+    text-align: center; /*para que todo lo q este adentro de main pueda centrarse*/
+}
+
+main .main-logo{
+    width: 53rem;
+    margin: 0 auto; /*despues de darle un tamano de ancho a un contenedor este se colocara justificado a la izq, para no jugar con los margenes utilizamos el atrubuto auto este lo q hara es tomar el espacio restante y dividirlo entre dos par agregar esos espacios alos lados del contendor y asi centrarlo*/
+    margin-bottom: 3.5rem; /*le agregamos margen para alejarlo del input*/
+}
+
+main .main-logo img{
+    width: 30rem;
+}
+
+
+
+.main-buttons{
+    display: flex;
+    justify-content: center;
+}
