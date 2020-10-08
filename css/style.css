@@ -67,6 +67,8 @@ main{
     text-align: center; /*para que todo lo q este adentro de main pueda centrarse*/
 }
 
+/*Estilos a la clase del logo*/
+
 main .main-logo{
     width: 53rem;
     margin: 0 auto; /*despues de darle un tamano de ancho a un contenedor este se colocara justificado a la izq, para no jugar con los margenes utilizamos el atrubuto auto este lo q hara es tomar el espacio restante y dividirlo entre dos par agregar esos espacios alos lados del contendor y asi centrarlo*/
@@ -77,7 +79,30 @@ main .main-logo img{
     width: 30rem;
 }
 
+/*Estilos al input*/
 
+main .main-input{
+    width: 53rem;
+    margin: 0 auto;
+    margin-bottom: 3.5rem;
+}
+
+main .main-input-container{ /*generamos este contenedor dentro del otro contenedor para manejar mejor los estilos*/
+    width: 52.5rem; /*size del contenedor q tendra nuestros tres elementos*/
+    border-radius: 10rem; /*redondeo del contenedor*/
+    border: 0.1rem solid #dfe1e5; /*le damos un grosor al borde q sea solido y del color q tiene el de google q sacamos con el color picker*/
+    display: flex; /*para q los tres elementos esten en linea*/
+    justify-content: center; /*para justificar el contenido al centro*/
+    align-items: center; /*para alinear los elementos al centro*/
+}
+
+/*estilos al input*/
+main .main-input input{
+    width: 45rem; /*le damos un size menor al padre*/
+    height: 4rem; 
+    border: none; /*quitamos el borde el input*/
+    outline: none; /*esto quita el efecto que se agregaba cuando haciamos clic en el input*/
+}
 
 .main-buttons{
     display: flex;
