@@ -41,6 +41,7 @@ header nav .nav-right-section{
 nav .nav-right-section a{
     margin-right: 1rem; /*le agregara margen a la derecha de los elementos ancla de 10px para que se separen*/
     color: #000000; /*le agregamos color a los elementos, en este caso negro*/
+    font-size: 1.3rem;
 }
 
 /*ahora le damos estilo a nuestro icono de menu*/
