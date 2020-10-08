@@ -52,6 +52,7 @@ nav .nav-right-section .menu-icon {
     background-size: contain; /*esto hara que el icono se aproxime al size de mi contenedor*/
     width: 2.5rem;
     height: 2.5rem;
+    cursor: pointer;
 }
 
 /*Aca le daremos estilo a nuestro logo de perfil*/
@@ -79,7 +80,7 @@ main .main-logo img{
     width: 30rem;
 }
 
-/*Estilos al input*/
+/*Estilos al contenedor general del input*/
 
 main .main-input{
     width: 53rem;
@@ -87,7 +88,7 @@ main .main-input{
     margin-bottom: 3.5rem;
 }
 
-main .main-input-container{ /*generamos este contenedor dentro del otro contenedor para manejar mejor los estilos*/
+main .main-input-container{ /*estilos al contenedor q tendra los tres elementos*/
     width: 52.5rem; /*size del contenedor q tendra nuestros tres elementos*/
     border-radius: 10rem; /*redondeo del contenedor*/
     border: 0.1rem solid #dfe1e5; /*le damos un grosor al borde q sea solido y del color q tiene el de google q sacamos con el color picker*/
@@ -96,12 +97,41 @@ main .main-input-container{ /*generamos este contenedor dentro del otro contened
     align-items: center; /*para alinear los elementos al centro*/
 }
 
-/*estilos al input*/
+/*estilos al input especifico*/
 main .main-input input{
     width: 45rem; /*le damos un size menor al padre*/
     height: 4rem; 
     border: none; /*quitamos el borde el input*/
     outline: none; /*esto quita el efecto que se agregaba cuando haciamos clic en el input*/
+}
+
+/*efecto de sombreado al pasar el mouse sobre el input*/
+main .main-input-container:hover{ /*obvio lo aplicamos a el contenedor principal q tiene los tres elementos y usamos una seudo clase en este caso hover*/
+    box-shadow: 0 0.1rem 0.6rem 0 #20212447;  /*esta propiedad me permite ponerle ese efecto*/ 
+    border-color: #dfe1e500; /*esto es para que el efecto se vea mas obscuro*/
+}
+
+/*Colocacion de iconos*/
+
+/*lupa*/
+main .main-input .search-icon{
+    background-image: url('https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_search_48px-512.png');
+    background-repeat: no-repeat; /*para que no se repita*/
+    background-position: center; /*para que se centre*/
+    background-size: contain; /*especifica el size de la imagen y le dice q escale la imagen al mayor size posible sin recortarla o estirarla*/
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+/*microfono*/
+main .main-input .micro-icon{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.8rem;
+    height: 1.8rem;
+    cursor: pointer; /*agregamos esto para que al pasar el mouse aparezca la manita*/
 }
 
 .main-buttons{
