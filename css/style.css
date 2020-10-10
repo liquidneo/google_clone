@@ -64,7 +64,7 @@ nav .nav-right-section img{
 /*Empezamos a darle estilo a la seccion principal*/
 
 main{
-    margin-top: 15rem;  /*le agregamos un margen para separarlo de nuestro header*/
+    margin-top: 10rem;  /*le agregamos un margen para separarlo de nuestro header*/
     text-align: center; /*para que todo lo q este adentro de main pueda centrarse*/
 }
 
@@ -136,6 +136,7 @@ main .main-input .micro-icon{
 
 /*Estilo de los botones*/
 
+/*Estilos generales al contenedor de los botones*/
 main .main-buttons{
     width: 53rem;
     margin: 0 auto;
@@ -143,6 +144,7 @@ main .main-buttons{
     justify-content: center;
 }
 
+/*Estilos para los botones*/
 main .main-buttons button{
     height: 3.6rem;
     background-color: #f2f2f2;
@@ -154,8 +156,67 @@ main .main-buttons button{
     margin-right: 1.5rem;
 }
 
+/*Estilos al pasar el mouse sobre el boton, usando la seudoclase hover*/
 main .main-buttons button:hover{
-    cursor: pointer;
+    cursor: pointer;   
     border: .01rem solid #c6c6c6;
-    box-shadow: 0 0.1rem 0.1rem #000;
+    box-shadow: 0 0.1rem 0.1rem #f2f2f2;
+    color: #222;
 }
+
+/*Estilo al tagline*/
+
+main .tagline{
+    font-size: small;
+    line-height: 2.8rem;
+}
+
+/*Estilos para el footer*/
+footer{
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    bottom: 0;
+    color: #0000008a;
+}
+
+
+footer .footer-country{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    background-color: #f2f2f2;
+    border: .01rem solid #e4e4e4;
+}
+
+footer .footer-country p{
+    margin: 0 0 0 1rem;
+}
+
+footer .footer-final{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #f2f2f2;
+    font-size: 1.4rem;
+
+}
+
+footer ul{
+    list-style: none;
+    margin: 1rem;
+    display: flex;
+    padding: 1.5rem;
+    margin: 0;
+}
+
+footer .footer-final .footer-left a, .footer-right a{
+    color: #0000008a;
+    margin: 1rem;
+
+}
+
+footer .footer-right{
+    justify-self: flex-end;
+}
+
